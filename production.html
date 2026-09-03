@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru" style="">
+<html lang="ru" class="scroll-smooth" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="utf-8" />
@@ -264,17 +264,17 @@
         </div>
     </header>
     <!-- Main Content Area -->
-    <main class="relative py-24 bg-surface overflow-hidden">
+    <main class="relative py-24 bg-surface overflow-visible">
         <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
         <div class="max-w-container-max mx-auto px-margin-desktop relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16">
             <!-- Left Sidebar: Categories (Cols 1-3) -->
             <aside class="lg:col-span-3 space-y-8 relative z-10">
-                <div class="sticky top-32">
-                    <div class="flex items-center gap-4 mb-8">
+                <div class="lg:sticky lg:top-28">
+                    <div class="flex items-center gap-4 mb-4">
                         <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Категории</span>
                         <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
                     </div>
-                    <nav class="space-y-2">
+                    <nav class="space-y-1" id="catalog-categories">
                         <!-- Active Item -->
                         <a class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md border-l-4 border-tech-cyan text-ast-deep-blue group transition-all" href="#">
                             <div class="flex items-center space-x-4">
@@ -323,8 +323,8 @@
                             <span class="font-technical-data text-[10px] bg-surface-variant/50 text-on-surface-variant px-2 py-1 rounded-md group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan tracking-wider">9</span>
                         </a>
                     </nav>
-                    <div class="pt-8 mt-8 border-t border-on-surface-variant/10 space-y-4">
-                        <div class="flex items-center space-x-4 text-ast-deep-blue mt-6">
+                    <div class="pt-4 mt-4 border-t border-on-surface-variant/10 space-y-3">
+                        <div class="flex items-center space-x-4 text-ast-deep-blue mt-3">
                             <span class="material-symbols-outlined text-tech-cyan text-xl">call</span>
                             <span class="font-body-md font-bold text-sm">+998 50 051 22 77</span>
                         </div>
@@ -340,7 +340,7 @@
                 <!-- Search & Filter Bar -->
                 <div class="bg-white p-4 rounded-xl border border-on-surface-variant/10 shadow-sm flex items-center space-x-4">
                     <span class="material-symbols-outlined text-tech-cyan">search</span>
-                    <input class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-ast-deep-blue placeholder:text-on-surface-variant/50 text-sm p-0 outline-none" placeholder="Поиск по каталогу..." type="text" />
+                    <input id="catalog-search" class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-ast-deep-blue placeholder:text-on-surface-variant/50 text-sm p-0 outline-none" placeholder="Поиск по каталогу..." type="search" autocomplete="off" />
                     <div class="w-px h-6 bg-on-surface-variant/10"></div>
                     <span class="font-technical-data text-xs text-on-surface-variant/40 tracking-widest">/</span>
                 </div>
@@ -350,12 +350,12 @@
                         <div class="w-12 h-12 bg-tech-cyan/10 rounded-xl flex items-center justify-center text-tech-cyan">
                             <span class="material-symbols-outlined text-2xl">water_drop</span>
                         </div>
-                        <h2 class="font-headline-lg text-ast-deep-blue text-3xl font-extrabold">Очистные сооружения</h2>
+                        <h2 id="catalog-heading" class="font-headline-lg text-ast-deep-blue text-3xl font-extrabold">Все категории</h2>
                     </div>
-                    <span class="font-technical-data text-sm text-tech-cyan bg-tech-cyan/10 px-4 py-1.5 rounded-md font-bold">9</span>
+                    <span id="catalog-count" class="font-technical-data text-sm text-tech-cyan bg-tech-cyan/10 px-4 py-1.5 rounded-md font-bold">39</span>
                 </div>
                 <!-- Product Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     <!-- Product Card 1 -->
                     <article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
                         <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
@@ -522,6 +522,143 @@
             </div>
         </div>
     </footer>
+    <script>
+    (() => {
+        const imageRoot = './images/production/';
+        const categories = [
+            { id:'cat01', badge:'01', icon:'water_drop', name:'Очистные сооружения', products:[
+                ['Компактная установка для биологической очистки сточных вод типа AST-B, надземного исполнения','AST EVROBION STANDART GORIZONT (2).png'],
+                ['Локально очистные сооружения подземного исполнения','Gemini_Generated_Image_4vd1ex4vd1ex4vd1-removebg-preview.png'],
+                ['Компактная установка для биологической очистки сточных вод типа AST-B подземного исполнения','AST EVROBION STANDART GORIZONT (2).png'],
+                ['Ливневое очистное сооружение подземного исполнения','LIVNEVIE OCHISTNOE SOORUJENIE (2).png'],
+                ['AST ЕВРОБИОН БИОМАТРИКС','AST EVROBION BIOMATRIX (2).png'],
+                ['AST ЭЛЕМЕНТ','AST ELEMENT (2).png'],
+                ['AST ЕВРОБИОН серии МАКС','AST EVROBION SERII MAKS (2).png'],
+                ['AST ЕВРОБИОН серии АРТ','AST EVROBION SERII ART (2) (2).png'],
+                ['AST ЕВРОБИОН серии РАУНД','AST_EVROBION_SERII_RAUND (2) (2).png']
+            ]},
+            { id:'cat02', badge:'02', icon:'valve', name:'Канализационная насосная станция (КНС)', products:[
+                ['Канализационная насосная станция (КНС)','(KNS)- KANALIZATSIONNAYA NASOSNAYA STANTSIYA (2).png']
+            ]},
+            { id:'cat03', badge:'03', icon:'settings', name:'Технологическое оборудование для очистных сооружений', products:[
+                ['Хлораторная установка с автодозатором','XLORATORNAYA USTANOVKA S AVTODOZATOROM (2).png'],
+                ['Механизированные автоматические грабли решеток','MEXANIZIROVANNIE AVTOMATICHESKIE GRABLI RESHETOK (2).png'],
+                ['Шнековый обезвоживатель осадка','SHNEKOVIY OBEZVOJIVATEL OSADKA (2).png'],
+                ['Песколовка для очистки сточных вод','PESKOLOVKA DLYA OCHISTKI STOCHNIX VOD (2).png'],
+                ['Решетка механическая РМУ','RESHETKA MEXANICHESKAYA RMU (2).png'],
+                ['Илоскреб','ILOSKREB (2).png']
+            ]},
+            { id:'cat04', badge:'04', icon:'plumbing', name:'Запорная арматура', products:[
+                ['Фланцевый адаптер ПВХ','FLANTSEVIY ADAPTER PVX (2).png'],
+                ['Задвижка чугунная DN-200','ZADVIJKA CHUGUNNAYA DN-200. (2).png'],
+                ['Затвор дисковый (поворотный) для перекрытия рабочей среды','ZATVOR DISKOVIY (POVOROTNIY) DLYA PEREKRITIYA RABOCHEY SREDI (2).png'],
+                ['Задвижка чугунная DN-300','ZADVIJKA CHUGUNNAYA DN-300 (2).png'],
+                ['Фланцы стальные ГОСТ 12820-80','FLANTSI STALNIE GOST 12820-80 (2).png'],
+                ['Обратный клапан межфланцевый 9ч76р DN-50','OBRATNIY KLAPAN MEJFLYANTSEVIY 9ч76р DN-50 (2).png'],
+                ['Вентиль чугунный на номинальное давление PN 1,6','VENTIL CHUGUNNIY NA NOMINALNOE DAVLENIE pn1,6 (2).png'],
+                ['Вантуз воздушный','VANTUZ VOZDUSHNIY (2).png'],
+                ['Муфта фланцевая','MUFTA FLANTSEVAYA (2).png']
+            ]},
+            { id:'cat05', badge:'05', icon:'fire_hydrant', name:'Пожарно-техническое оборудование', products:[
+                ['Подставка пожарного гидранта','PODSTAVKA POJARNOGO GIDRANTA 1 (2).png'],
+                ['Колонка пожарная','KOLONKA POJARNAYA (2).png'],
+                ['Кран пожарный','KRAN POJARNIY (2).png'],
+                ['Пожарный гидрант надземный ГОСТ Р 53961-2010','POJARNIY GIDRANT NADZEMNIY GOST P 53961-2010 (2).png'],
+                ['Противопожарная насосная станция','PROTIVOPOJARNAYA NASOSNAYA STANTSIYA (2).png']
+            ]},
+            { id:'cat06', badge:'06', icon:'water', name:'Водонапорная башня', products:[
+                ['Водонапорная башня','Gemini_Generated_Image_gn1hbbgn1hbbgn1h-removebg-preview (2).png']
+            ]},
+            { id:'cat07', badge:'07', icon:'precision_manufacturing', name:'Прочие', products:[
+                ['Глубинный насос ЭЦВ 5-5-80','GLUBINNIY NASOS ЭЦВ 5-5-80 (2).png'],
+                ['УФ лампа для химической очистки сточных вод','Gemini_Generated_Image_v6koiv6koiv6koiv-removebg-preview.png'],
+                ['Воздушный ресивер RV-250','VOZDUSHNIY RESIVER RV-250 (2).png'],
+                ['Жироуловитель для сточных вод автоматический','JIROULOVITEL DLYA STOCHNIX VOD (2).png'],
+                ['Жироуловитель хоз-бытовой','JIROULOVITEL XOZ-BITOVOY (2).png'],
+                ['Гидроэлеватор ГЭ','GIDROELEVATOR GE (2).png'],
+                ['Затворы щитовые ЗЩ, ЩЗ','ZATVORI SHITOVIE ЗЩ, ЩЗ (2).png'],
+                ['Люк чугунный замковый Т250 «УЗСУВТАЪМИНОТ»',"LYUK CHUGUNNIY ZAMKOVIY T250 (UZSUVTA'MINOT) (2).png"]
+            ]}
+        ];
+
+        const categoryNav = document.getElementById('catalog-categories');
+        const search = document.getElementById('catalog-search');
+        const grid = document.getElementById('product-grid');
+        const heading = document.getElementById('catalog-heading');
+        const count = document.getElementById('catalog-count');
+        let activeCategory = 'all';
+
+        const allProducts = categories.flatMap(category =>
+            category.products.map(product => ({ category, name:product[0], image:product[1] }))
+        );
+
+        function navItem(category, active) {
+            const isAll = category.id === 'all';
+            const number = isAll ? allProducts.length : category.products.length;
+            return `<button type="button" data-category="${category.id}" aria-pressed="${active}" class="w-full flex items-center justify-between p-3 rounded-xl group transition-all text-left ${active ? 'bg-white shadow-md border-l-4 border-tech-cyan text-ast-deep-blue' : 'hover:bg-white hover:shadow-sm border border-transparent hover:border-on-surface-variant/10'}">
+                <span class="flex items-center space-x-3 min-w-0">
+                    <span class="w-7 h-7 shrink-0 flex items-center justify-center rounded-lg ${active ? 'bg-tech-cyan/10 text-tech-cyan' : 'bg-surface-variant/30 text-on-surface-variant group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan'}">
+                        <span class="material-symbols-outlined text-[18px]">${isAll ? 'menu' : category.icon}</span>
+                    </span>
+                    <span class="font-body-md text-xs leading-tight ${active ? 'font-bold' : 'text-on-surface-variant group-hover:text-ast-deep-blue font-medium'}">${isAll ? 'Все категории' : category.badge + '. ' + category.name}</span>
+                </span>
+                <span class="font-technical-data text-[10px] px-2 py-1 rounded-md tracking-wider ${active ? 'bg-ast-deep-blue text-white' : 'bg-surface-variant/50 text-on-surface-variant group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan'}">${number}</span>
+            </button>`;
+        }
+
+        function card(item) {
+            const src = imageRoot + encodeURIComponent(item.image).replace(/%2F/g, '/');
+            return `<article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
+                <div class="relative p-8 bg-surface-ice/50 flex justify-center items-center h-56 border-b border-on-surface-variant/5">
+                    <img class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md mix-blend-multiply" src="${src}" alt="${item.name}" loading="lazy">
+                </div>
+                <div class="p-6 flex flex-col flex-1 bg-white relative">
+                    <p class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-wider uppercase mb-2">${item.category.name}</p>
+                    <h3 class="font-body-md font-bold text-ast-deep-blue mb-3 text-sm leading-tight">${item.name}</h3>
+                    <div class="mt-auto pt-6 flex items-center justify-between border-t border-on-surface-variant/10">
+                        <span class="font-technical-data text-[11px] text-tech-cyan font-bold tracking-wider uppercase">Цена по запросу</span>
+                        <a href="tel:+998500512277" aria-label="Узнать цену: ${item.name}" class="w-10 h-10 rounded-full bg-surface-variant/20 flex items-center justify-center text-ast-deep-blue hover:bg-tech-cyan hover:text-white transition-colors group-hover:bg-tech-cyan group-hover:text-white">
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </article>`;
+        }
+
+        function renderNavigation() {
+            const all = { id:'all', products:allProducts };
+            categoryNav.innerHTML = [all, ...categories].map(category => navItem(category, category.id === activeCategory)).join('');
+        }
+
+        function renderProducts() {
+            const query = search.value.trim().toLocaleLowerCase('ru');
+            const selected = activeCategory === 'all' ? null : categories.find(category => category.id === activeCategory);
+            const visible = allProducts.filter(item =>
+                (!selected || item.category.id === selected.id) &&
+                (!query || item.name.toLocaleLowerCase('ru').includes(query) || item.category.name.toLocaleLowerCase('ru').includes(query))
+            );
+            heading.textContent = selected ? selected.name : (query ? 'Результаты поиска' : 'Все категории');
+            count.textContent = visible.length;
+            grid.innerHTML = visible.length ? visible.map(card).join('') : `<div class="md:col-span-2 xl:col-span-3 bg-white border border-on-surface-variant/10 rounded-2xl p-12 text-center"><span class="material-symbols-outlined text-tech-cyan text-5xl mb-4">search_off</span><h3 class="font-headline-lg text-ast-deep-blue text-2xl font-bold mb-2">Ничего не найдено</h3><p class="text-on-surface-variant">Попробуйте изменить запрос или выбрать другую категорию.</p></div>`;
+        }
+
+        categoryNav.addEventListener('click', event => {
+            const button = event.target.closest('[data-category]');
+            if (!button) return;
+            activeCategory = button.dataset.category;
+            renderNavigation();
+            renderProducts();
+            const catalogTop = document.querySelector('main').offsetTop - 24;
+            requestAnimationFrame(() => {
+                window.scrollTo({ top: Math.max(0, catalogTop), behavior: 'smooth' });
+            });
+        });
+        search.addEventListener('input', renderProducts);
+        renderNavigation();
+        renderProducts();
+    })();
+    </script>
 </body>
 
 </html>
