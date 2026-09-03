@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="ru" style="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aqua Sfera Technology - Product Catalog</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#c3e8ff",
+                        "background": "#f5faff",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#e9eef4",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dee3e8",
+                        "surface-dim": "#d5dbe0",
+                        "tertiary-fixed-dim": "#ffb86e",
+                        "secondary-fixed": "#d5e3ff",
+                        "tech-cyan": "#19a9f9",
+                        "peach-orange": "#ffb685",
+                        "on-background": "#161c20",
+                        "on-secondary-container": "#294f83",
+                        "surface": "#f5faff",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#ffdcbd",
+                        "outline-variant": "#bcc8d1",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#dee3e8",
+                        "tertiary-container": "#fb9c24",
+                        "on-tertiary-fixed-variant": "#693c00",
+                        "surface-container-high": "#e3e9ee",
+                        "on-tertiary-container": "#653a00",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "inverse-surface": "#2b3135",
+                        "error": "#ba1a1a",
+                        "stroke-light": "#D1D5DB",
+                        "secondary-container": "#9fc2fe",
+                        "tertiary": "#8a5100",
+                        "on-primary-fixed-variant": "#004c69",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#7ad0ff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#7ad0ff",
+                        "primary-container": "#00bfff",
+                        "on-surface-variant": "#3d4850",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#001b3c",
+                        "primary": "#00668a",
+                        "on-primary-container": "#004a65",
+                        "outline": "#6d7981",
+                        "inverse-on-surface": "#ecf1f7",
+                        "surface-container-low": "#eff4fa",
+                        "surface-bright": "#f5faff",
+                        "secondary": "#3a5f94",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#00668a",
+                        "surface-ice": "#F9FAFF",
+                        "ast-deep-blue": "#005aa8",
+                        "industrial-grey": "#43474F",
+                        "on-primary-fixed": "#001e2c",
+                        "on-surface": "#161c20"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "128px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-xl": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "display-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "technical-data": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-md": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg-mobile": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "sans": [
+                            "Montserrat", "sans-serif"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-caps": [
+                            "12px", {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-xl": [
+                            "48px", {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "display-lg": [
+                            "72px", {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "technical-data": [
+                            "14px", {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "body-md": [
+                            "16px", {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "28px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px", {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bg-grid {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(25, 169, 249, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(25, 169, 249, 0.05) 1px, transparent 1px);
+        }
+        
+        .bg-grid-white {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animate-float {
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes kenburns {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .animate-kenburns {
+            animation: kenburns 30s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-tech-cyan selection:text-ast-deep-blue">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-white/10 text-white font-label-caps text-label-caps bg-ast-deep-blue/90 backdrop-blur-md">
+        <div class="flex justify-between items-center px-margin-desktop py-base w-full max-w-[1920px] mx-auto h-[80px]">
+            <div class="flex items-center gap-4 shrink-0"><span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">AST</span></div>
+            <nav class="hidden md:flex items-center gap-4 lg:gap-6 mx-4">
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./index.html">Главная</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./about.html">О компании</a>
+                <a class="text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./production.html">Продукция</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./news.html">Новости</a>
+            </nav>
+            <div class="flex items-center gap-4 lg:gap-6 shrink-0">
+                <div class="relative group hidden lg:block"><button class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase flex items-center gap-1 text-[11px] tracking-wider">Опросные листы<span class="material-symbols-outlined text-sm">expand_more</span></button>
+                    <div class="absolute top-full right-0 mt-4 w-64 bg-ast-deep-blue border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 backdrop-blur-md overflow-hidden">
+                        <div class="flex flex-col"><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors border-b border-white/5 uppercase text-[10px] tracking-widest">Опросный лист КНС</a><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors uppercase text-[10px] tracking-widest">Опросный лист ЛОС</a></div>
+                    </div>
+                </div><span class="hidden lg:block uppercase text-white text-[11px] tracking-wider cursor-pointer hover:text-tech-cyan transition-colors">RU</span><button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button></div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative w-full h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden bg-[#0d1218]">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="w-full h-full bg-cover bg-center mix-blend-overlay opacity-50 animate-kenburns origin-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WaLAbTMYsJZ6iAWig5Rpvuka00lJVe8HehOCk3CPsVHDmaEbBV0j8DRpxrX55sXefK1-q2hENjAiYv_5UvnhqiL8fHKZ5f3_uv6Q0q0QEwQrHJRJqnFZT1Der0MN4mXgKcueDYS3hxEYlEnuTBMYyj6sAMbmlgSN_6CjgZcxH316kCuVL4oqfW6ycKMk-1x-CxfHgF_aATO6qhRgwIDI3IO1HOZR7nIeiTB5bWd75PUME4Ng1h08-aow');"></div>
+            <!-- Gradient overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0d1218]/90 via-[#0d1218]/60 to-transparent"></div>
+        </div>
+        <!-- Technical grid overlay -->
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-50 z-[1]"></div>
+        <!-- Crosshair / Architectural elements -->
+        <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop flex flex-col mt-20">
+            <!-- Breadcrumbs -->
+            <div class="flex items-center space-x-2 text-white/60 font-label-caps text-label-caps mb-8 uppercase tracking-widest">
+                <span>Главная</span>
+                <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                <span class="text-tech-cyan">ПРОДУКЦИЯ</span>
+            </div>
+            <h1 class="font-display-lg text-white mb-6 max-w-4xl leading-[1.05] tracking-tighter font-extrabold text-[48px] md:text-[64px]">
+                ПРОДУКЦИЯ <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-tech-cyan to-tech-cyan/50">AQUA SFERA TECHNOLOGY</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-white/70 mb-12 max-w-2xl text-lg font-light">
+                Сочетание передовых европейских технологий, промышленных стандартов качества и богатого наследия инженерной мысли для создания устойчивого будущего водных ресурсов.
+            </p>
+        </div>
+    </header>
+    <!-- Main Content Area -->
+    <main class="relative py-24 bg-surface overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Left Sidebar: Categories (Cols 1-3) -->
+            <aside class="lg:col-span-3 space-y-8 relative z-10">
+                <div class="sticky top-32">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Категории</span>
+                        <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                    </div>
+                    <nav class="space-y-2">
+                        <!-- Active Item -->
+                        <a class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md border-l-4 border-tech-cyan text-ast-deep-blue group transition-all" href="#">
+                            <div class="flex items-center space-x-4">
+                                <span class="w-8 h-8 flex items-center justify-center bg-tech-cyan/10 text-tech-cyan rounded-lg">
+                                <span class="material-symbols-outlined text-[18px]">menu</span>
+                                </span>
+                                <span class="font-body-md text-sm font-bold">Все категории</span>
+                            </div>
+                            <span class="font-technical-data text-[10px] bg-ast-deep-blue text-white px-2 py-1 rounded-md tracking-wider">51</span>
+                        </a>
+                        <!-- Inactive Items -->
+                        <a class="flex items-center justify-between p-4 hover:bg-white hover:shadow-sm rounded-xl group transition-all border border-transparent hover:border-on-surface-variant/10" href="#">
+                            <div class="flex items-center space-x-4">
+                                <span class="w-8 h-8 flex items-center justify-center bg-surface-variant/30 text-on-surface-variant rounded-lg group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">water_drop</span>
+                                </span>
+                                <span class="font-body-md text-sm text-on-surface-variant group-hover:text-ast-deep-blue font-medium">01. Очистные сооружения</span>
+                            </div>
+                            <span class="font-technical-data text-[10px] bg-surface-variant/50 text-on-surface-variant px-2 py-1 rounded-md group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan tracking-wider">9</span>
+                        </a>
+                        <a class="flex items-center justify-between p-4 hover:bg-white hover:shadow-sm rounded-xl group transition-all border border-transparent hover:border-on-surface-variant/10" href="#">
+                            <div class="flex items-center space-x-4">
+                                <span class="w-8 h-8 flex items-center justify-center bg-surface-variant/30 text-on-surface-variant rounded-lg group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">valve</span>
+                                </span>
+                                <span class="font-body-md text-sm text-on-surface-variant group-hover:text-ast-deep-blue font-medium">02. Канализационная насосная станция (КНС)</span>
+                            </div>
+                            <span class="font-technical-data text-[10px] bg-surface-variant/50 text-on-surface-variant px-2 py-1 rounded-md group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan tracking-wider">1</span>
+                        </a>
+                        <a class="flex items-center justify-between p-4 hover:bg-white hover:shadow-sm rounded-xl group transition-all border border-transparent hover:border-on-surface-variant/10" href="#">
+                            <div class="flex items-center space-x-4">
+                                <span class="w-8 h-8 flex items-center justify-center bg-surface-variant/30 text-on-surface-variant rounded-lg group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">settings</span>
+                                </span>
+                                <span class="font-body-md text-sm text-on-surface-variant group-hover:text-ast-deep-blue font-medium">03. Технологическое оборудование</span>
+                            </div>
+                            <span class="font-technical-data text-[10px] bg-surface-variant/50 text-on-surface-variant px-2 py-1 rounded-md group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan tracking-wider">6</span>
+                        </a>
+                        <a class="flex items-center justify-between p-4 hover:bg-white hover:shadow-sm rounded-xl group transition-all border border-transparent hover:border-on-surface-variant/10" href="#">
+                            <div class="flex items-center space-x-4">
+                                <span class="w-8 h-8 flex items-center justify-center bg-surface-variant/30 text-on-surface-variant rounded-lg group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan transition-colors">
+                                <span class="material-symbols-outlined text-[18px]">plumbing</span>
+                                </span>
+                                <span class="font-body-md text-sm text-on-surface-variant group-hover:text-ast-deep-blue font-medium">04. Запорная арматура</span>
+                            </div>
+                            <span class="font-technical-data text-[10px] bg-surface-variant/50 text-on-surface-variant px-2 py-1 rounded-md group-hover:bg-tech-cyan/10 group-hover:text-tech-cyan tracking-wider">9</span>
+                        </a>
+                    </nav>
+                    <div class="pt-8 mt-8 border-t border-on-surface-variant/10 space-y-4">
+                        <div class="flex items-center space-x-4 text-ast-deep-blue mt-6">
+                            <span class="material-symbols-outlined text-tech-cyan text-xl">call</span>
+                            <span class="font-body-md font-bold text-sm">+998 50 051 22 77</span>
+                        </div>
+                        <div class="flex items-center space-x-4 text-ast-deep-blue">
+                            <span class="material-symbols-outlined text-tech-cyan text-xl">language</span>
+                            <span class="font-body-md font-bold text-sm">aquast.uz</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- Right Content Area: Product Grid (Cols 4-12) -->
+            <div class="lg:col-span-9 space-y-8 relative z-10">
+                <!-- Search & Filter Bar -->
+                <div class="bg-white p-4 rounded-xl border border-on-surface-variant/10 shadow-sm flex items-center space-x-4">
+                    <span class="material-symbols-outlined text-tech-cyan">search</span>
+                    <input class="flex-1 bg-transparent border-none focus:ring-0 font-body-md text-ast-deep-blue placeholder:text-on-surface-variant/50 text-sm p-0 outline-none" placeholder="Поиск по каталогу..." type="text" />
+                    <div class="w-px h-6 bg-on-surface-variant/10"></div>
+                    <span class="font-technical-data text-xs text-on-surface-variant/40 tracking-widest">/</span>
+                </div>
+                <!-- Category Header -->
+                <div class="flex items-center justify-between pb-6 border-b border-on-surface-variant/10 mb-8">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-tech-cyan/10 rounded-xl flex items-center justify-center text-tech-cyan">
+                            <span class="material-symbols-outlined text-2xl">water_drop</span>
+                        </div>
+                        <h2 class="font-headline-lg text-ast-deep-blue text-3xl font-extrabold">Очистные сооружения</h2>
+                    </div>
+                    <span class="font-technical-data text-sm text-tech-cyan bg-tech-cyan/10 px-4 py-1.5 rounded-md font-bold">9</span>
+                </div>
+                <!-- Product Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
+                        <div class="relative p-8 bg-surface-ice/50 flex justify-center items-center h-56 border-b border-on-surface-variant/5">
+                            <img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md mix-blend-multiply" data-alt="A clean 3D render of a white cylindrical water treatment unit with a green top hatch, placed on a stark white background. The unit features subtle green and blue logo decals. The lighting is studio-quality and even, highlighting the technical details of the equipment in a sterile, engineering context."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWW20j0nD33WeacG21ULZ1OQwADRQvrpDKbOVKVas1MnzVBPjQPuXKTanM7Vpfw6yNIHD7DKWl-2pMvCSERrYxdS0jH4WmlWKAX_yS3rxWIAsmQc16fai3gnVaDUhWxuuMshcaKYpXobi3e2CCRehja8QHvJ2bpsAClnsR9SjFtc5ch7bytumMUh5lfO8Zb51M0WVmLVjVHVUu1mHP0ob3pvMM10n4fz5ytUPXNsPrmFLC6qQLqesc"
+                            />
+                        </div>
+
+
+                        <div class="p-6 flex flex-col flex-1 bg-white relative">
+                            <h3 class="font-body-md font-bold text-ast-deep-blue mb-3 text-sm leading-tight line-clamp-3">Компактная установка для биологической очистки сточных вод типа AST-B, надземного...</h3>
+                            <div class="mt-auto pt-6 flex items-center justify-between border-t border-on-surface-variant/10">
+                                <span class="font-technical-data text-[11px] text-tech-cyan font-bold tracking-wider uppercase">Цена по запросу</span>
+                                <button class="w-10 h-10 rounded-full bg-surface-variant/20 flex items-center justify-center text-ast-deep-blue hover:bg-tech-cyan hover:text-white transition-colors group-hover:bg-tech-cyan group-hover:text-white">
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Product Card 2 -->
+                    <article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
+                        <div class="relative p-8 bg-surface-ice/50 flex justify-center items-center h-56 border-b border-on-surface-variant/5">
+                            <img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md mix-blend-multiply" data-alt="A cross-sectional 3D diagram of an underground biological wastewater treatment system. The equipment is shown buried in soil with green grass on top. Complex internal chambers, pipes, and filtering mechanisms are visible in a highly detailed, technical illustration style typical of engineering catalogs."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cSO_NZQV6ZPoJDl_w0t_jWkcp8peOPNQVFVxp7MyfvF1N22pWomGl0fYeg10xFNick9dXKpgnOdAbeCnAvU89f--yPp8LsRQtp8TnM9F4j2ZIJ-J3YuuU3EvytOyy_K0UmfqA02TaU6N4GroFq4QU1lM9opcUwyIx9dbCbGlYgm40RXi8ouONbZa2lBnGq0XK-yoO2rzcvWpT3gLtMqp8oJkoqEaJElKA2II9Lpj-xrYhL6nMyxc"
+                            />
+                        </div>
+
+
+                        <div class="p-6 flex flex-col flex-1 bg-white relative">
+                            <h3 class="font-body-md font-bold text-ast-deep-blue mb-3 text-sm leading-tight line-clamp-3">Локально очистные сооружения подземного исполнения</h3>
+                            <div class="mt-auto pt-6 flex items-center justify-between border-t border-on-surface-variant/10">
+                                <span class="font-technical-data text-[11px] text-tech-cyan font-bold tracking-wider uppercase">Цена по запросу</span>
+                                <button class="w-10 h-10 rounded-full bg-surface-variant/20 flex items-center justify-center text-ast-deep-blue hover:bg-tech-cyan hover:text-white transition-colors group-hover:bg-tech-cyan group-hover:text-white">
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Product Card 3 -->
+                    <article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
+                        <div class="relative p-8 bg-surface-ice/50 flex justify-center items-center h-56 border-b border-on-surface-variant/5">
+                            <img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md mix-blend-multiply" data-alt="A technical 3D cutaway showing the interior of a cylindrical stormwater treatment tank. Inside, various baffles, filters, and settling chambers are visible in precise detail. The color palette is clinical: whites, greys, and distinct blues/greens for internal components, emphasizing the functional engineering design."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0MCQ3esnuVGvxN05qgjWmkLS74TJNUXdMyKc7MYSREjaHPGqaOHsPzw6qbcrDcpC2FIhhKTunR-iiYLXpkn7uayWAztxrKe1pXrP4uK7lxVLKrmKR_Va3ICFFIdip2X0NbtqDnZDYOOCr3sZ4TBi9ghJ8kdMKKp3HwtXtYUBf4cGGCSfmFYPLHsJg5yGVwSNPWntzl6ipg6gYvyuTz7iGW6kZNuLRHN-kKyrrQV2VL5M7ezRcpEfE"
+                            />
+                        </div>
+
+
+                        <div class="p-6 flex flex-col flex-1 bg-white relative">
+                            <h3 class="font-body-md font-bold text-ast-deep-blue mb-3 text-sm leading-tight line-clamp-3">Ливневое очистное сооружение подземного исполнения</h3>
+                            <div class="mt-auto pt-6 flex items-center justify-between border-t border-on-surface-variant/10">
+                                <span class="font-technical-data text-[11px] text-tech-cyan font-bold tracking-wider uppercase">Цена по запросу</span>
+                                <button class="w-10 h-10 rounded-full bg-surface-variant/20 flex items-center justify-center text-ast-deep-blue hover:bg-tech-cyan hover:text-white transition-colors group-hover:bg-tech-cyan group-hover:text-white">
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Product Card 4 -->
+                    <article class="bg-white border border-on-surface-variant/10 rounded-2xl flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden relative">
+                        <div class="absolute top-0 right-0 w-8 h-8 border-t border-r border-tech-cyan/30 m-4 z-10"></div>
+                        <div class="relative p-8 bg-surface-ice/50 flex justify-center items-center h-56 border-b border-on-surface-variant/5">
+                            <img class="max-h-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md mix-blend-multiply" data-alt="A clean studio shot of two large, industrial square cooling towers or ventilation units side-by-side. They have a grey louvered exterior and dark green top covers. The setting is a pure white background, casting soft subtle shadows to highlight the robust, modular construction."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2SpXwFfpDpuXp3qbIPRrus6Ko5JFRxC4wISiLkeJrRYtvSt5E4qfeyy6ueJU4qCw_DMbEjJscYS6gcF_F9C0nv0id_HTJYOdqGJN0BfLqxY3qKKLdtI4sgo693BBHltesob-eLZbus0qTCSVQ3yn40sqv6nowBauW3X0O-f_GF14jAwNEEd2aFJMKm9beQnfhWUiFJsNix1Z1nmmFIDBINvs3ZTRFlPANzV6mp2PqYDO1q-yr-s3n"
+                            />
+                        </div>
+
+
+                        <div class="p-6 flex flex-col flex-1 bg-white relative">
+                            <h3 class="font-body-md font-bold text-ast-deep-blue mb-3 text-sm leading-tight line-clamp-3">Блочно-модульные очистные сооружения</h3>
+                            <div class="mt-auto pt-6 flex items-center justify-between border-t border-on-surface-variant/10">
+                                <span class="font-technical-data text-[11px] text-tech-cyan font-bold tracking-wider uppercase">Цена по запросу</span>
+                                <button class="w-10 h-10 rounded-full bg-surface-variant/20 flex items-center justify-center text-ast-deep-blue hover:bg-tech-cyan hover:text-white transition-colors group-hover:bg-tech-cyan group-hover:text-white">
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Pagination/Load More -->
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full bg-ast-deep-blue text-white relative z-10 font-body-md overflow-hidden mt-auto">
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop py-24 relative z-10">
+            <div class="grid grid-cols-12 gap-gutter">
+                <!-- Brand and Socials -->
+                <div class="col-span-12 md:col-span-4 flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <span class="font-headline-lg text-headline-lg font-bold tracking-tight text-white">AST</span>
+                        <p class="text-white/70 max-w-xs leading-relaxed">
+                            Инновационные технологии производства мирового класса. Современные технологии и строгий контроль качества на каждом этапе.
+                            </ p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">send</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">photo_camera</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navigation Columns -->
+                <div class="col-span-12 md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Навигация</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Продукция</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Решения</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Проекты</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Сервис</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Полезное</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Техническая поддержка</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Документация</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">FAQ</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Лаборатория</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Контакты</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <p class="text-white text-sm">ул. Промышленная, 42</p>
+                            <p class="text-white text-sm">+7 (800) 555-01-99</p>
+                            <p class="text-white text-sm">info@aquasfera.tech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="bg-black/20 py-8 border-t border-white/10 relative z-10">
+            <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-col gap-1">
+                    <span class="font-bold text-white">AST</span>
+                    <p class="text-white/50 text-sm">© 2024 Aqua Sfera Technology. Все права защищены.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Политика конфиденциальности</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Карта сайта</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Техническая поддержка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

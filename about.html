@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="ru" style="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aqua Sfera Technology - Инженерные решения</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#c3e8ff",
+                        "background": "#f5faff",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#e9eef4",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dee3e8",
+                        "surface-dim": "#d5dbe0",
+                        "tertiary-fixed-dim": "#ffb86e",
+                        "secondary-fixed": "#d5e3ff",
+                        "tech-cyan": "#19a9f9",
+                        "peach-orange": "#ffb685",
+                        "on-background": "#161c20",
+                        "on-secondary-container": "#294f83",
+                        "surface": "#f5faff",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#ffdcbd",
+                        "outline-variant": "#bcc8d1",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#dee3e8",
+                        "tertiary-container": "#fb9c24",
+                        "on-tertiary-fixed-variant": "#693c00",
+                        "surface-container-high": "#e3e9ee",
+                        "on-tertiary-container": "#653a00",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "inverse-surface": "#2b3135",
+                        "error": "#ba1a1a",
+                        "stroke-light": "#D1D5DB",
+                        "secondary-container": "#9fc2fe",
+                        "tertiary": "#8a5100",
+                        "on-primary-fixed-variant": "#004c69",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#7ad0ff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#7ad0ff",
+                        "primary-container": "#00bfff",
+                        "on-surface-variant": "#3d4850",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#001b3c",
+                        "primary": "#00668a",
+                        "on-primary-container": "#004a65",
+                        "outline": "#6d7981",
+                        "inverse-on-surface": "#ecf1f7",
+                        "surface-container-low": "#eff4fa",
+                        "surface-bright": "#f5faff",
+                        "secondary": "#3a5f94",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#00668a",
+                        "surface-ice": "#F9FAFF",
+                        "ast-deep-blue": "#005aa8",
+                        "industrial-grey": "#43474F",
+                        "on-primary-fixed": "#001e2c",
+                        "on-surface": "#161c20"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "128px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-xl": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "display-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "technical-data": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-md": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg-mobile": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "sans": [
+                            "Montserrat", "sans-serif"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-caps": [
+                            "12px", {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-xl": [
+                            "48px", {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "display-lg": [
+                            "72px", {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "technical-data": [
+                            "14px", {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "body-md": [
+                            "16px", {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "28px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px", {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bg-grid {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(25, 169, 249, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(25, 169, 249, 0.05) 1px, transparent 1px);
+        }
+        
+        .bg-grid-white {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animate-float {
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes kenburns {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .animate-kenburns {
+            animation: kenburns 30s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-tech-cyan selection:text-ast-deep-blue">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-white/10 text-white font-label-caps text-label-caps bg-ast-deep-blue/90 backdrop-blur-md">
+        <div class="flex justify-between items-center px-margin-desktop py-base w-full max-w-[1920px] mx-auto h-[80px]">
+            <div class="flex items-center gap-4 shrink-0"><span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">AST</span></div>
+            <nav class="hidden md:flex items-center gap-4 lg:gap-6 mx-4">
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./index.html">Главная</a>
+                <a class="text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./about.html">О компании</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./production.html">Продукция</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./news.html">Новости</a>
+            </nav>
+            <div class="flex items-center gap-4 lg:gap-6 shrink-0">
+                <div class="relative group hidden lg:block"><button class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase flex items-center gap-1 text-[11px] tracking-wider">Опросные листы<span class="material-symbols-outlined text-sm">expand_more</span></button>
+                    <div class="absolute top-full right-0 mt-4 w-64 bg-ast-deep-blue border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 backdrop-blur-md overflow-hidden">
+                        <div class="flex flex-col"><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors border-b border-white/5 uppercase text-[10px] tracking-widest">Опросный лист КНС</a><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors uppercase text-[10px] tracking-widest">Опросный лист ЛОС</a></div>
+                    </div>
+                </div><span class="hidden lg:block uppercase text-white text-[11px] tracking-wider cursor-pointer hover:text-tech-cyan transition-colors">RU</span><button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button></div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative w-full h-[600px] flex items-center overflow-hidden bg-[#0d1218]">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-full bg-cover bg-center opacity-40 animate-kenburns" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WP8mw6FbyL9SfEDQy-LloeBzWEZfrRmQsbQ5e2pX1TdommXOMPYS_Jy7UQnhRSKK9NOpBSsltLAFXMEWDRTnjyM-na9cZqJdIFvJXCWMCeiWkzBMERqWUP39FCz0bBeHbkw5xpUBiHwdMAKqKXE1NHPncjoypZuaUxB76eSYjfMB1jH0y7Y7Hdk3kleBXZS3J-9o2wuL8sJ3Nvnb-1ygWLnziLxj7C7EoR2Dg80B17xBsVIld0j4xOeAw');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0d1218] via-[#0d1218]/80 to-transparent"></div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-20 z-[1]"></div>
+        <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop flex flex-col gap-6">
+            <nav class="flex items-center gap-2 text-white/50 font-label-caps text-[11px] tracking-widest uppercase mb-2"><span class="">Главная</span><span class="material-symbols-outlined text-[12px]">chevron_right</span><span class="text-tech-cyan">О компании</span></nav>
+            <h1 class="text-white leading-tight tracking-tighter font-extrabold uppercase max-w-4xl mb-2 text-headline-lg md:text-5xl">О КОМПАНИИ <br/><span class="text-tech-cyan">AQUA SFERA TECHNOLOGY</span></h1>
+            <p class="font-body-lg text-white/70 max-w-2xl text-lg md:text-xl font-light leading-relaxed mb-2">Сочетание передовых европейских технологий, промышленных стандартов качества и богатого наследия инженерной мысли для создания устойчивого будущего водных ресурсов.</p>
+        </div>
+    </header>
+    <section class="relative py-32 overflow-hidden bg-surface-container-low bg-grid">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-40"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="grid grid-cols-12 gap-16 items-center">
+                <!-- Left Side: Feature Image Card -->
+                <div class="col-span-12 lg:col-span-6 relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl border border-tech-cyan/20 group h-[500px]">
+                        <img alt="Industrial Infrastructure" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XUjxrebKet7koIEfBS-lciRAGDAEbcvNjHjtK4i6Q7LLIGYMpiL498o0CSnzX4dua5wU7B0zWXvXsJJBberc9ryl1SwAj-MW0Giy8EKWwPg6EfG637gO9L3TQTL2Hk-54enaErYSGpNtsXyRx9db4gq1dIn0kbPLxfG1IUt8j2xK2wDop3sLyjjojOdCJb1S-1ZkuA862yvxw_oJoJQOvfdm6Sj_VKSN-hwwapUx7ndFSiom7cD9b6E-Q"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-ast-deep-blue/80 via-transparent to-transparent"></div>
+                        <!-- Overlay Badge -->
+                        <div class="absolute bottom-8 left-8 right-8 text-white">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="material-symbols-outlined text-tech-cyan">verified</span>
+                                <span class="font-headline-lg text-xl font-bold">Гарантия качества</span>
+                            </div>
+                            <p class="font-body-md text-white/80 max-w-xs">Полный цикл производства от сырья до упаковки</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Content & Features -->
+                <div class="col-span-12 lg:col-span-6 flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-display-lg text-ast-deep-blue font-extrabold leading-tight md:text-4xl text-3xl">
+                            Надежный партнер для <br/><span class="text-tech-cyan">вашего бизнеса</span>
+                        </h2>
+                        <p class="font-body-lg text-on-surface-variant leading-relaxed">
+                            Мы — команда <span class="font-bold text-ast-deep-blue">AQUA SFERA TECHNOLOGY</span>, создаем решения для промышленного успеха наших клиентов, объединяя опыт и инновации.
+                        </p>
+                    </div>
+                    <!-- Horizontal Tags -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-full bg-ast-deep-blue text-white font-label-caps text-[10px] tracking-widest flex items-center gap-2">
+<div class="w-1 h-1 rounded-full bg-tech-cyan"></div> ЕВРОПЕЙСКИЕ ТЕХНОЛОГИИ
+          </span>
+                        <span class="px-4 py-2 rounded-full bg-ast-deep-blue text-white font-label-caps text-[10px] tracking-widest flex items-center gap-2">
+<div class="w-1 h-1 rounded-full bg-tech-cyan"></div> СТАНДАРТЫ ГОСТ/EN
+          </span>
+                        <span class="px-4 py-2 rounded-full bg-ast-deep-blue text-white font-label-caps text-[10px] tracking-widest flex items-center gap-2">
+<div class="w-1 h-1 rounded-full bg-tech-cyan"></div> ЭКОЛОГИЧНОСТЬ
+          </span>
+                    </div>
+                    <!-- Vertical Feature List -->
+                    <div class="flex flex-col gap-6 mt-4">
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-ast-deep-blue/5 border border-tech-cyan/20 flex items-center justify-center text-tech-cyan group-hover:bg-tech-cyan group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined">factory</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-headline-lg text-lg text-ast-deep-blue">Передовое производство</h4>
+                                <p class="font-body-md text-on-surface-variant/80 text-sm">Один из самых передовых заводов европейского уровня с интегрированным циклом.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-ast-deep-blue/5 border border-tech-cyan/20 flex items-center justify-center text-tech-cyan group-hover:bg-tech-cyan group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined">leaderboard</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-headline-lg text-lg text-ast-deep-blue">Лидер отрасли</h4>
+                                <p class="font-body-md text-on-surface-variant/80 text-sm">Ведущий производитель продукции, занимающий лидирующие позиции благодаря качеству.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 group">
+                            <div class="w-12 h-12 shrink-0 rounded-xl bg-ast-deep-blue/5 border border-tech-cyan/20 flex items-center justify-center text-tech-cyan group-hover:bg-tech-cyan group-hover:text-white transition-colors duration-300">
+                                <span class="material-symbols-outlined">handshake</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-headline-lg text-lg text-ast-deep-blue">Комплексный подход</h4>
+                                <p class="font-body-md text-on-surface-variant/80 text-sm">Мы — не просто производитель, а партнер. Наша команда экспертов создает эффективные решения.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-4 mb-16">
+                <h2 class="font-display-lg text-ast-deep-blue font-extrabold leading-tight md:text-4xl text-3xl uppercase">Сферы применения продукции</h2>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl">Наши медные трубы и фитинги разработаны для широкого спектра задач, обеспечивая эффективность и долговечность в любой среде.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- HVAC -->
+                <div class="group p-8 rounded-xl bg-surface-container-low border border-tech-cyan/10 hover:border-tech-cyan/40 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-12 h-12 rounded-lg bg-ast-deep-blue/5 flex items-center justify-center text-tech-cyan mb-6 group-hover:bg-tech-cyan group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">ac_unit</span>
+                    </div>
+                    <h4 class="font-headline-lg text-lg text-ast-deep-blue mb-3">HVAC-системы</h4>
+                    <p class="font-body-md text-on-surface-variant/80 text-sm leading-relaxed">Системы отопления, вентиляции и кондиционирования воздуха высокой эффективности.</p>
+                </div>
+                <!-- Heat Exchangers -->
+                <div class="group p-8 rounded-xl bg-surface-container-low border border-tech-cyan/10 hover:border-tech-cyan/40 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-12 h-12 rounded-lg bg-ast-deep-blue/5 flex items-center justify-center text-tech-cyan mb-6 group-hover:bg-tech-cyan group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">heat_pump</span>
+                    </div>
+                    <h4 class="font-headline-lg text-lg text-ast-deep-blue mb-3">Теплообменники</h4>
+                    <p class="font-body-md text-on-surface-variant/80 text-sm leading-relaxed">Производство промышленных и бытовых теплообменных аппаратов с высокой теплоотдачей.</p>
+                </div>
+                <!-- Medicine -->
+                <div class="group p-8 rounded-xl bg-surface-container-low border border-tech-cyan/10 hover:border-tech-cyan/40 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-12 h-12 rounded-lg bg-ast-deep-blue/5 flex items-center justify-center text-tech-cyan mb-6 group-hover:bg-tech-cyan group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">medical_services</span>
+                    </div>
+                    <h4 class="font-headline-lg text-lg text-ast-deep-blue mb-3">Медицина</h4>
+                    <p class="font-body-md text-on-surface-variant/80 text-sm leading-relaxed">Специализированные трубы, соответствующие строгим санитарным нормам.</p>
+                </div>
+                <!-- Industry -->
+                <div class="group p-8 rounded-xl bg-surface-container-low border border-tech-cyan/10 hover:border-tech-cyan/40 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-12 h-12 rounded-lg bg-ast-deep-blue/5 flex items-center justify-center text-tech-cyan mb-6 group-hover:bg-tech-cyan group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">precision_manufacturing</span>
+                    </div>
+                    <h4 class="font-headline-lg text-lg text-ast-deep-blue mb-3">Промышленность</h4>
+                    <p class="font-body-md text-on-surface-variant/80 text-sm leading-relaxed">Индустриальное производство, машиностроение и бытовое применение повышенной надежности.</p>
+                </div>
+                <!-- Water Supply -->
+                <div class="group p-8 rounded-xl bg-surface-container-low border border-tech-cyan/10 hover:border-tech-cyan/40 transition-all duration-300 hover:shadow-xl">
+                    <div class="w-12 h-12 rounded-lg bg-ast-deep-blue/5 flex items-center justify-center text-tech-cyan mb-6 group-hover:bg-tech-cyan group-hover:text-white transition-colors">
+                        <span class="material-symbols-outlined">water_drop</span>
+                    </div>
+                    <h4 class="font-headline-lg text-lg text-ast-deep-blue mb-3">Водоснабжение &amp; ECO</h4>
+                    <p class="font-body-md text-on-surface-variant/80 text-sm leading-relaxed">Системы питьевого водоснабжения и хладагенты, включая экологичные решения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-surface-container-low relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-4 mb-16">
+                <h2 class="font-display-lg text-ast-deep-blue font-extrabold leading-tight md:text-4xl text-3xl uppercase">Наша команда</h2>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl">
+                    За каждым метром качественной продукции стоит работа команды профессионалов AQUA SFERA TECHNOLOGY. Мы объединили лучших специалистов отрасли, обладающих глубокими знаниями в инженерии и металлургии.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="group relative aspect-[4/5] rounded-lg overflow-hidden border border-tech-cyan/10 shadow-lg cursor-pointer"><img alt="Абдуллаев Рустам" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AEtjO1VXDJRbR9t6etDz7LBt0NgWH63QFTd4Tyta1auPdjRJW3FCKFGarW8xzgGZG2uwFpePmxkvCeE4iwSUaF1ust8e-WXgrfy8amaIDwj2bAYD_SJr-BNfuZ-y8VA_O7P2A01uRng7PlE1W8Rx_pymGpfN3ghwxKBoA9JRW8tu2I7ucuZFpqALscrs6m8XwqC_8f7HqBCs779Tq-6omXcMJrCnDgB0092KoUgQJQPRtlR3eG0zwOi62cp8vUc"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex flex-col gap-1 transform transition-transform duration-300 group-hover:-translate-y-4">
+                            <h4 class="font-bold text-xl text-white">Абдуллаев Рустам</h4>
+                            <p class="text-tech-cyan text-[11px] uppercase tracking-wider font-bold">Генеральный директор</p>
+                            <div class="h-[1px] w-full bg-white/20 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-center gap-2 text-white/70 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="material-symbols-outlined text-sm">mail</span><span class="">sh.tubes@yandex.com</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="group relative aspect-[4/5] rounded-lg overflow-hidden border border-tech-cyan/10 shadow-lg cursor-pointer"><img alt="Каримова Лейла" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AEtjO1X5oJHFtDsLiHOy_dGBeyOXS5nQOiQ9qY4VY7XhR_cPRIriuhwOAx9g1s7M2TTezALr9tp9y3KgPH95aCDFXJ-RS-dMr6GTBOHq2F7tWXHwLg7J9CdnpUeyeYmIR5Sa-aJ-OyAlfWDC7I_VBtPU5F5jYnRGaSm8iskGoAI5Xgd4Ci-6p2nAwMPw7iDN0j9i9rF-pR3Gf3QJLi0fZKChZKYqnWTTvPlKTHkDHj5cl8vt9XO0xdnsvRvVApE"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex flex-col gap-1 transform transition-transform duration-300 group-hover:-translate-y-4">
+                            <h4 class="font-bold text-xl text-white">Каримова Лейла</h4>
+                            <p class="text-tech-cyan text-[11px] uppercase tracking-wider font-bold">Начальник отдела ВЭД</p>
+                            <div class="h-[1px] w-full bg-white/20 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-center gap-2 text-white/70 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="material-symbols-outlined text-sm">mail</span><span class="">info@aquasfera.tech</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="group relative aspect-[4/5] rounded-lg overflow-hidden border border-tech-cyan/10 shadow-lg cursor-pointer"><img alt="Мирзаев Анвар" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AEtjO1VdvFWbSmVGVFav7G0PoON8J0XrvI3YCReN71GcaTXI4yRQmJY4ROg_Yf5EUJm8I6btBN28sVruaFnpFZMjjV7EyiunVfNm7E1HTwfXHXAmMbwjfR3PmPwF6WoJB34--C5V6o2nBmBGfirFX9IjuxvvdcmxyR7-Jx19CpTA5usarCVHASefbUliLcQO99oC4Z1J4QNMOM1wDa7uqJGR6k0BhrWyQ_3R4ZqQxsCJsuGNJGAOSuQS_Xb9_A"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex flex-col gap-1 transform transition-transform duration-300 group-hover:-translate-y-4">
+                            <h4 class="font-bold text-xl text-white">Мирзаев Анвар</h4>
+                            <p class="text-tech-cyan text-[11px] uppercase tracking-wider font-bold">Менеджер по продажам</p>
+                            <div class="h-[1px] w-full bg-white/20 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-center gap-2 text-white/70 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="material-symbols-outlined text-sm">mail</span><span class="">sales@aquasfera.tech</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative aspect-[4/5] rounded-lg overflow-hidden border border-tech-cyan/10 shadow-lg cursor-pointer"><img alt="Султанов Данияр" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPbP4Be7sXod8DeiiVZO8QOZjWs8UPeH82JmamCv9dqNP0_0a_BLpeEgypGv4xpYTH9Ub1XT_6anoYNTnTvu6luMXMTt0Oi3X2PxY3No-N5maDlLtbb9j0m6YW2N1Oc0SaiimlYOawRafhFpDuELspAjDnVPCdyOGbSorEf3vN10rqv0p168O1NPhopobZaB68vsNNykoLIFK77eHBkhJfp_FUz3G11DRAO9x4VYmO7cUpb6F24LU9"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex flex-col gap-1 transform transition-transform duration-300 group-hover:-translate-y-4">
+                            <h4 class="font-bold text-xl text-white">Султанов Данияр</h4>
+                            <p class="text-tech-cyan text-[11px] uppercase tracking-wider font-bold">Технический директор</p>
+                            <div class="h-[1px] w-full bg-white/20 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-center gap-2 text-white/70 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="material-symbols-outlined text-sm">mail</span><span class="">tech@aquasfera.tech</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative aspect-[4/5] rounded-lg overflow-hidden border border-tech-cyan/10 shadow-lg cursor-pointer"><img alt="Сабирова Нигора" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNQB79Rp4lm1wrP52dUNAZ4NgtXugpR9Y4nlA7GbpzmV8QHlgXnVRO7Hor_mFMuRpxmiPXYT6XsfC4PAazNjyFRk7uEzIrw1f0uZzNgpPebnhVL9M9v4A805PBHjEBKcS_UQOwK1ZcGfW-Qi7aMTK2glmdprb2tX7BHfCQ0XokSZCYYbRoH-6Rwc24GdUUJroMob_62KoI6xqf1EfUmTHYEtkvDEKdEWxdVMtS5f55ltHJyxNX4elb"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <div class="flex flex-col gap-1 transform transition-transform duration-300 group-hover:-translate-y-4">
+                            <h4 class="font-bold text-xl text-white">Сабирова Нигора</h4>
+                            <p class="text-tech-cyan text-[11px] uppercase tracking-wider font-bold">Ведущий инженер</p>
+                            <div class="h-[1px] w-full bg-white/20 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-center gap-2 text-white/70 text-[11px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"><span class="material-symbols-outlined text-sm">mail</span><span class="">eng@aquasfera.tech</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-4 mb-16">
+                <h2 class="font-display-lg text-ast-deep-blue font-extrabold leading-tight md:text-4xl text-3xl uppercase">Сертификаты и лицензии</h2>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl">Наша продукция соответствует строгим международным и национальным стандартам. Мы регулярно проходим аудиты и сертификацию для гарантии безопасности и надежности.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Card 1 -->
+                <div class="flex flex-col gap-4">
+                    <div class="group relative aspect-[1/1.4] bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0">
+                            <img alt="ISO 9001:2015 Certificate" class="w-full h-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1XK2xnCKxYQTLvR4Vo3j0v_IoosNvWa0Dr7IYlMRE1DC9B16CqvhHNWi1mNLIfxAox_flXyRQdAI493lQjDkKYwUsED7_PZpSq1VZDhunTHjUAAgy_Y2kXu_3ODCxHnPW4WNCuDPQGqAfrrnx-cKCJ9bO-tFGD28hw2Sza_CEQWdFwxugd_-7oHmJl3UeE4WTS5mxMZHGFPReededHLDWSoEJsezyqLijy7GPEBKEjC5gYN0KynmbwxSLQ"
+                            />
+                        </div>
+                        <div class="absolute inset-0 bg-ast-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-4xl mb-2">zoom_in</span>
+                            <span class="font-label-caps text-[12px] tracking-widest">ПРОСМОТР</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-ast-deep-blue">ISO 9001:2015</h4>
+                        <p class="text-tech-cyan text-sm">Система менеджмента качества</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-col gap-4">
+                    <div class="group relative aspect-[1/1.4] bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0">
+                            <img alt="ГОСТ 617-2006 Certificate" class="w-full h-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1UWeB2jWfwH9rfZ8cJBGdMcKRX__18kcYGn4_vrzOu2uQcS3NiRK_vL-6C34_EJrtNbGaxSDMXA2mmP1l91DKfL0ZX5ng1ldoJAlcqs7hk-yUx68m93GmimG5t-UNVVG--ozGVMZSF6PlTBQ9eIHx4CARpXA7li17zzQuQHRxnFKskhtA4iPspsmZXPlFAR-brRfNJWXOPjffytn6maZqnwaHFS-2a0jIfylhOJrbOB9o1MD5n_NPBwuis"
+                            />
+                        </div>
+                        <div class="absolute inset-0 bg-ast-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-4xl mb-2">zoom_in</span>
+                            <span class="font-label-caps text-[12px] tracking-widest">ПРОСМОТР</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-ast-deep-blue">ГОСТ 617-2006</h4>
+                        <p class="text-tech-cyan text-sm">Медные трубы общего назначения</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex flex-col gap-4">
+                    <div class="group relative aspect-[1/1.4] bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0">
+                            <img alt="ASTM B88 Certificate" class="w-full h-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1UrfYQvZvshveT_m6UquigrUTYSPHC9tI9-_ZsDuN8b9lDRsUY25Cwu_PD6BnbbaaOVQ9T7q9Kijdm5ayHQoF8HsDGk9G40S1GU6qYUR0Jt0-fzEBEb3yDHVw351Ks7lQoDCnriwXDeK9MC941XWecsJBYPX_cFVXWhIN_oU5wexTudF6hMXHXCqCp33RuLRN77IvnCP_8c1fVT6y8vaIVrfO1QwHg-O4FJUUzwY-Z6T6ujKGggVK_nfA"
+                            />
+                        </div>
+                        <div class="absolute inset-0 bg-ast-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-4xl mb-2">zoom_in</span>
+                            <span class="font-label-caps text-[12px] tracking-widest">ПРОСМОТР</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-ast-deep-blue">ASTM B88</h4>
+                        <p class="text-tech-cyan text-sm">Стандарт бесшовных труб</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="flex flex-col gap-4">
+                    <div class="group relative aspect-[1/1.4] bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden cursor-pointer">
+                        <div class="absolute inset-0">
+                            <img alt="O'zDSt Certificate" class="w-full h-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1WEIqvPgCuH-w-boSCHDCO3wLiLr6ZyxyWMp2Sh5698jSScc4orVcbj1v_ogDQIx2671ouivDTE_MHgn4ikbFUKA4lhlz3AcQ6noTK9DB-kyjNqrHf7PGgOOe2bpmKC1aZXRlpZkTjre7ZY0tTyeH9hvcXiYKlqct10ZFHmYX7UzrLxr-Vjkd6-5C_sXtvp-ZQKrx4kMtiFeW3M6_RaygDzrRNGNPDj-kAEfFntDotj_Zw3IHo4vpB-i9k"
+                            />
+                        </div>
+                        <div class="absolute inset-0 bg-ast-deep-blue/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+                            <span class="material-symbols-outlined text-4xl mb-2">zoom_in</span>
+                            <span class="font-label-caps text-[12px] tracking-widest">ПРОСМОТР</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-ast-deep-blue">O'zDSt</h4>
+                        <p class="text-tech-cyan text-sm">Национальный стандарт соответствия</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-ast-deep-blue rounded-xl p-8 flex flex-col md:flex-row items-center gap-6 border border-white/10">
+                <div class="w-16 h-16 rounded-lg bg-white/10 flex items-center justify-center text-tech-cyan shrink-0">
+                    <span class="material-symbols-outlined text-3xl">description</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-xl text-white">Нужна заверенная копия сертификата?</h4>
+                    <p class="text-white/70 font-body-md">
+                        Мы предоставляем полный пакет сопроводительной технической документации с каждой партией товара. Вы можете запросить копии сертификатов у вашего персонального менеджера или <a class="text-tech-cyan hover:underline" href="#">скачать архив документов</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="w-full bg-ast-deep-blue text-white relative z-10 font-body-md overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop py-24 relative z-10">
+            <div class="grid grid-cols-12 gap-gutter">
+                <!-- Brand and Socials -->
+                <div class="col-span-12 md:col-span-4 flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <span class="font-headline-lg text-headline-lg font-bold tracking-tight text-white">AST</span>
+                        <p class="text-white/70 max-w-xs leading-relaxed">
+                            Инновационные технологии производства мирового класса. Современные технологии и строгий контроль качества на каждом этапе.
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">send</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">photo_camera</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navigation Columns -->
+                <div class="col-span-12 md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Навигация</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Продукция</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Решения</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Проекты</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Сервис</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Полезное</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Техническая поддержка</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Документация</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">FAQ</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Лаборатория</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Контакты</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <p class="text-white text-sm">ул. Промышленная, 42</p>
+                            <p class="text-white text-sm">+7 (800) 555-01-99</p>
+                            <p class="text-white text-sm">info@aquasfera.tech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="bg-black/20 py-8 border-t border-white/10 relative z-10">
+            <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-col gap-1">
+                    <span class="font-bold text-white">AST</span>
+                    <p class="text-white/50 text-sm">© 2024 Aqua Sfera Technology. Все права защищены.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Политика конфиденциальности</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Карта сайта</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Техническая поддержка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

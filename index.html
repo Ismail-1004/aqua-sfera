@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aqua Sfera Technology - Инженерные решения</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#c3e8ff",
+                        "background": "#f5faff",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#e9eef4",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dee3e8",
+                        "surface-dim": "#d5dbe0",
+                        "tertiary-fixed-dim": "#ffb86e",
+                        "secondary-fixed": "#d5e3ff",
+                        "tech-cyan": "#19a9f9",
+                        "peach-orange": "#ffb685",
+                        "on-background": "#161c20",
+                        "on-secondary-container": "#294f83",
+                        "surface": "#f5faff",
+                        "on-secondary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#ffdcbd",
+                        "outline-variant": "#bcc8d1",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#dee3e8",
+                        "tertiary-container": "#fb9c24",
+                        "on-tertiary-fixed-variant": "#693c00",
+                        "surface-container-high": "#e3e9ee",
+                        "on-tertiary-container": "#653a00",
+                        "secondary-fixed-dim": "#a7c8ff",
+                        "inverse-surface": "#2b3135",
+                        "error": "#ba1a1a",
+                        "stroke-light": "#D1D5DB",
+                        "secondary-container": "#9fc2fe",
+                        "tertiary": "#8a5100",
+                        "on-primary-fixed-variant": "#004c69",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#7ad0ff",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#7ad0ff",
+                        "primary-container": "#00bfff",
+                        "on-surface-variant": "#3d4850",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#001b3c",
+                        "primary": "#00668a",
+                        "on-primary-container": "#004a65",
+                        "outline": "#6d7981",
+                        "inverse-on-surface": "#ecf1f7",
+                        "surface-container-low": "#eff4fa",
+                        "surface-bright": "#f5faff",
+                        "secondary": "#3a5f94",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#00668a",
+                        "surface-ice": "#F9FAFF",
+                        "ast-deep-blue": "#005aa8",
+                        "industrial-grey": "#43474F",
+                        "on-primary-fixed": "#001e2c",
+                        "on-surface": "#161c20"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "128px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-caps": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-xl": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "display-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "technical-data": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-md": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "headline-lg-mobile": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "body-lg": [
+                            "Montserrat", "sans-serif"
+                        ],
+                        "sans": [
+                            "Montserrat", "sans-serif"
+                        ]
+                    },
+                    "fontSize": {
+                        "label-caps": [
+                            "12px", {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.1em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-xl": [
+                            "48px", {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "display-lg": [
+                            "72px", {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                            }
+                        ],
+                        "technical-data": [
+                            "14px", {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                            }
+                        ],
+                        "body-md": [
+                            "16px", {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "28px", {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px", {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bg-grid {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(25, 169, 249, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(25, 169, 249, 0.05) 1px, transparent 1px);
+        }
+        
+        .bg-grid-white {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .animate-float {
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes kenburns {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .animate-kenburns {
+            animation: kenburns 30s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-tech-cyan selection:text-ast-deep-blue">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 border-b border-white/10 text-white font-label-caps text-label-caps bg-ast-deep-blue/90 backdrop-blur-md">
+        <div class="flex justify-between items-center px-margin-desktop py-base w-full max-w-[1920px] mx-auto h-[80px]">
+            <div class="flex items-center gap-4 shrink-0"><span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">AST</span></div>
+            <nav class="hidden md:flex items-center gap-4 lg:gap-6 mx-4">
+                <a class="text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./index.html">Главная</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./about.html">О компании</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./production.html">Продукция</a>
+                <a class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase text-[11px] tracking-wider whitespace-nowrap" href="./news.html">Новости</a>
+            </nav>
+            <div class="flex items-center gap-4 lg:gap-6 shrink-0">
+                <div class="relative group hidden lg:block"><button class="text-white hover:text-tech-cyan transition-colors duration-200 uppercase flex items-center gap-1 text-[11px] tracking-wider">Опросные листы<span class="material-symbols-outlined text-sm">expand_more</span></button>
+                    <div class="absolute top-full right-0 mt-4 w-64 bg-ast-deep-blue border border-white/10 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 backdrop-blur-md overflow-hidden">
+                        <div class="flex flex-col"><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors border-b border-white/5 uppercase text-[10px] tracking-widest">Опросный лист КНС</a><a href="#" class="px-6 py-4 text-white hover:bg-white/10 hover:text-tech-cyan transition-colors uppercase text-[10px] tracking-widest">Опросный лист ЛОС</a></div>
+                    </div>
+                </div><span class="hidden lg:block uppercase text-white text-[11px] tracking-wider cursor-pointer hover:text-tech-cyan transition-colors">RU</span><button class="md:hidden text-white"><span class="material-symbols-outlined">menu</span></button></div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden bg-[#0d1218]">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="w-full h-full bg-cover bg-center mix-blend-overlay opacity-50 animate-kenburns origin-center" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1WaLAbTMYsJZ6iAWig5Rpvuka00lJVe8HehOCk3CPsVHDmaEbBV0j8DRpxrX55sXefK1-q2hENjAiYv_5UvnhqiL8fHKZ5f3_uv6Q0q0QEwQrHJRJqnFZT1Der0MN4mXgKcueDYS3hxEYlEnuTBMYyj6sAMbmlgSN_6CjgZcxH316kCuVL4oqfW6ycKMk-1x-CxfHgF_aATO6qhRgwIDI3IO1HOZR7nIeiTB5bWd75PUME4Ng1h08-aow');"></div>
+            <!-- Gradient overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0d1218]/90 via-[#0d1218]/60 to-transparent"></div>
+        </div>
+        <!-- Technical grid overlay -->
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-50 z-[1]"></div>
+        <!-- Crosshair / Architectural elements -->
+        <!-- Data Overlay -->
+
+        <div class="absolute bottom-[20%] right-[10%] z-[2] font-technical-data text-[10px] text-white/30 tracking-widest flex flex-col gap-1 hidden lg:flex text-right">
+        </div>
+        <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop flex flex-col mt-20 animate-float">
+            <h1 class="font-display-lg text-white mb-8 max-w-5xl leading-[1.05] tracking-tighter font-extrabold text-[48px] md:text-[56px] lg:text-[72px]">
+                Инновационные технологии <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">производства</span> мирового класса
+            </h1>
+            <p class="font-body-lg text-body-lg text-white/70 mb-14 max-w-2xl text-lg md:text-xl font-light">
+                Автоматизированные линии производства обеспечивают высочайшее качество каждого изделия, устанавливая новые стандарты в индустрии.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <button class="bg-peach-orange text-ast-deep-blue font-label-caps text-label-caps px-10 py-5 uppercase tracking-[0.2em] hover:bg-white hover:text-ast-deep-blue hover:-translate-y-1 hover:shadow-[0_15px_30px_-10px_rgba(255,182,133,0.4)] transition-all duration-300 rounded-2xl font-bold">Каталог продукции</button>
+                <button class="bg-transparent border border-white/30 text-white font-label-caps text-label-caps px-10 py-5 uppercase tracking-[0.2em] hover:bg-white hover:text-ast-deep-blue hover:border-white hover:-translate-y-1 hover:shadow-[0_15px_30px_-10px_rgba(255,255,255,0.2)] transition-all duration-300 rounded-2xl backdrop-blur-sm relative overflow-hidden group font-bold">
+<span class="relative z-10">О заводе</span>
+</button>
+            </div>
+        </div>
+        <!-- Slider Controls -->
+        <div class="absolute bottom-12 left-margin-desktop z-20 flex items-center gap-3">
+            <div class="w-12 h-[2px] bg-white/20 hover:bg-white/50 cursor-pointer transition-colors duration-300"></div>
+            <div class="w-12 h-[2px] bg-tech-cyan cursor-pointer shadow-[0_0_10px_rgba(25,169,249,0.5)]"></div>
+            <div class="w-12 h-[2px] bg-white/20 hover:bg-white/50 cursor-pointer transition-colors duration-300"></div>
+        </div>
+        <!-- Navigation Arrows -->
+        <div class="absolute bottom-10 right-margin-desktop z-20 flex items-center gap-4">
+            <button class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-ast-deep-blue hover:border-white transition-all duration-300 backdrop-blur-sm group"><span class="material-symbols-outlined transition-transform duration-300 group-hover:-translate-x-1">west</span></button>
+            <button class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-ast-deep-blue hover:border-white transition-all duration-300 backdrop-blur-sm group"><span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1">east</span></button>
+        </div>
+    </header>
+    <section class="relative py-32 bg-surface overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="grid grid-cols-12 gap-16 items-center">
+                <div class="col-span-12 lg:col-span-5 flex flex-col gap-8 order-2 lg:order-1 relative z-10">
+                    <div class="flex items-center gap-4"><span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">О компании</span>
+                        <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                    </div>
+                    <h2 class="font-display-lg text-ast-deep-blue leading-tight text-[48px] md:text-[56px] font-extrabold">Инженерное превосходство</h2>
+                    <p class="font-body-lg text-on-surface-variant text-lg leading-relaxed">Aqua Sfera Technology — ведущий разработчик систем очистки сточных вод. Мы объединяем передовые научные достижения с промышленной надежностью, создавая решения для глобальной экологии.</p>
+                </div>
+                <div class="col-span-12 lg:col-span-7 relative h-[600px] flex items-center justify-center order-1 lg:order-2">
+                    <!-- Technical Blueprint Background -->
+                    <div class="absolute inset-0 border border-tech-cyan/20 rounded-2xl overflow-hidden bg-white/50 backdrop-blur-sm opacity-60">
+                        <div class="absolute inset-0 bg-grid opacity-100"></div>
+                        <!-- HUD Circles -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-tech-cyan/10 rounded-full animate-pulse"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-tech-cyan/5 rounded-full"></div>
+                        <!-- Ghosted Outline -->
+                        <svg class="absolute inset-0 w-full h-full text-tech-cyan/10" fill="none" preserveAspectRatio="none" stroke="currentColor" viewBox="0 0 100 100">
+<path d="M10 90 L90 90 L90 10 L10 10 Z" stroke-width="0.5"></path>
+<path d="M10 50 L90 50 M50 10 L50 90" stroke-dasharray="2 2" stroke-width="0.5"></path>
+<circle cx="50" cy="50" r="30" stroke-width="0.5"></circle>
+</svg>
+                        <div class="absolute top-4 left-4 w-4 h-4 border-t border-l border-tech-cyan/40"></div>
+                        <div class="absolute bottom-4 right-4 w-4 h-4 border-b border-r border-tech-cyan/40"></div>
+                    </div>
+                    <!-- Main Industrial Photo -->
+                    <div class="relative z-20 w-[90%] shadow-2xl transform hover:rotate-1 transition-transform duration-500 rounded-2xl lg:ml-auto">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 border-t-2 border-l-2 border-tech-cyan z-30"></div>
+                        <img alt="Industrial Filtration" class="w-full h-80 object-cover rounded-2xl" src="https://lh3.googleusercontent.com/aida/AEtjO1UWVx1dpxcZyn4Bg9J-XnRGNwbfwqj_GyDHfVa_0qF-p-bu0-1qpO2urEnWWryg_iD1jcJT4M_8PPSVt0u6nRKoZDVvWhs69-nz3EGrW5D8C22JoJogoY-R80_uoAyGk6fQOD35wcp-hUpQz653iqMYo0OLhMHye94me-Baw6AEARNuXJrRgJdaZPTaPB5NgXyr5ZY07np3WmNfLO2W7Nj3phuCDevZTOtPyRl9txgUrISECEf87AO0oiI">
+                        <div class="absolute bottom-4 right-4 bg-tech-cyan text-white font-technical-data text-[10px] px-3 py-1.5 font-bold rounded-md shadow-lg">CORE_UNIT_01</div>
+                    </div>
+                    <!-- Floating HUD Elements -->
+
+                    <div class="absolute bottom-20 left-10 z-30 animate-float" style="animation-delay: -2s;">
+                        <div class="p-4 bg-white/80 backdrop-blur-md border border-tech-cyan/30 rounded-2xl shadow-xl">
+                            <div class="font-technical-data text-[10px] text-ast-deep-blue font-bold mb-2">FLOW_RATE_ANALYSIS</div>
+                            <div class="flex gap-1.5 items-end h-8">
+                                <div class="w-1.5 bg-tech-cyan h-4 rounded-t-sm"></div>
+                                <div class="w-1.5 bg-tech-cyan h-6 rounded-t-sm"></div>
+                                <div class="w-1.5 bg-tech-cyan h-3 rounded-t-sm"></div>
+                                <div class="w-1.5 bg-tech-cyan h-8 rounded-t-sm"></div>
+                                <div class="w-1.5 bg-tech-cyan h-5 rounded-t-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vertical HUD Text -->
+
+                    <!-- Connecting Line to Left Content -->
+                    <div class="absolute top-1/2 -left-12 w-12 h-[1px] bg-gradient-to-r from-transparent to-tech-cyan/40 hidden lg:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="relative py-32 bg-white overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                        <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Наши партнеры</span>
+                        <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                    </div>
+                    <h2 class="font-display-lg text-ast-deep-blue leading-tight text-[48px] md:text-[56px] font-extrabold">Доверие лидеров индустрии</h2>
+                </div>
+                <div class="relative w-full overflow-hidden border-y border-on-surface-variant/10 py-12 bg-surface-ice/50">
+                    <style>
+                        @keyframes scroll {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            100% {
+                                transform: translateX(-50%);
+                            }
+                        }
+                        
+                        .animate-scroll {
+                            display: flex;
+                            width: max-content;
+                            animation: scroll 40s linear infinite;
+                        }
+                    </style>
+                    <div class="animate-scroll flex gap-12 items-center">
+                        <div class="flex gap-12 items-center flex-none">
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">GLOBAL_IND</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">TECH_CORP</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">HYDRO_SYS</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">ECO_FLOW</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">NORD_ENG</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">APEX_WAT</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">STEEL_NET</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">PRIME_RES</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-12 items-center flex-none">
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">GLOBAL_IND</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">TECH_CORP</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">HYDRO_SYS</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">ECO_FLOW</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">NORD_ENG</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">APEX_WAT</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">STEEL_NET</div>
+                            </div>
+                            <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">PRIME_RES</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative py-32 bg-surface-ice overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                        <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Проекты</span>
+                        <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                    </div>
+                    <h2 class="font-display-lg text-ast-deep-blue leading-tight text-[48px] md:text-[56px] font-extrabold">Реализованные проекты</h2>
+                    <p class="font-body-lg text-on-surface-variant text-lg max-w-2xl">Многолетний опыт реализации сложнейших инженерных задач в промышленном и гражданском секторах.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[350px]">
+                    <!-- Project Card 1 (Large) -->
+                    <div class="group relative overflow-hidden rounded-2xl shadow-xl border border-tech-cyan/10 col-span-1 md:col-span-8 row-span-1">
+                        <img alt="Project 1" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UcUm1zkdyCyvjxWatgdDUezGH-zRRg7P3RplvT2nxv9YkX7hRTK61MOQ9YNwROzSLqY91NNCJoZqFqspI_0y6ZhmxyiRPnC3WHgauim-xKgCVxa9iHSNfmD4cHioEtl_4goNhUPkBurpJ_khY3wDjMcvWGpKE7SXb7nJTQJeKR6fSNeAVATPLxXs9SKllD3YqLbXtOWZq6OmCNtFm6ZrsweyXxYdhqMzOfCuMAdWlAy4kG9Avuq4xHX4k">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ast-deep-blue via-ast-deep-blue/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full max-w-xl">
+                            <span class="font-technical-data text-[10px] text-tech-cyan uppercase tracking-widest mb-2 block">ОЧИСТКА ВОДЫ</span>
+                            <h3 class="font-headline-lg text-white text-3xl mb-4 font-bold">Очистные сооружения г. Ташкент</h3>
+                            <a class="text-white font-label-caps text-[12px] uppercase tracking-widest flex items-center gap-2 hover:text-tech-cyan transition-colors" href="#">
+              Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 (Small) -->
+                    <div class="group relative overflow-hidden rounded-2xl shadow-xl border border-tech-cyan/10 col-span-1 md:col-span-4 row-span-1">
+                        <img alt="Project 2" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UWVx1dpxcZyn4Bg9J-XnRGNwbfwqj_GyDHfVa_0qF-p-bu0-1qpO2urEnWWryg_iD1jcJT4M_8PPSVt0u6nRKoZDVvWhs69-nz3EGrW5D8C22JoJogoY-R80_uoAyGk6fQOD35wcp-hUpQz653iqMYo0OLhMHye94me-Baw6AEARNuXJrRgJdaZPTaPB5NgXyr5ZY07np3WmNfLO2W7Nj3phuCDevZTOtPyRl9txgUrISECEf87AO0oiI">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ast-deep-blue via-ast-deep-blue/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <span class="font-technical-data text-[10px] text-tech-cyan uppercase tracking-widest mb-2 block">ИНЖЕНЕРИЯ</span>
+                            <h3 class="font-headline-lg text-white text-xl mb-4 font-bold">Насосная станция "Южная"</h3>
+                            <a class="text-white font-label-caps text-[12px] uppercase tracking-widest flex items-center gap-2 hover:text-tech-cyan transition-colors" href="#">
+              Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 (Wide) -->
+                    <div class="group relative overflow-hidden rounded-2xl shadow-xl border border-tech-cyan/10 col-span-1 md:col-span-12 row-span-1 h-[400px]">
+                        <img alt="Project 3" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1U12KNa70Ohs15-OtWtfkhG_Mi-m29-PyvSrX6n5x6vYZIGDdB6NEX3FW2ouB9lY8dlK7ixH14fJdV39-GDgv0wmXYZUegjv-GWP34M4HgTuFfy3fT2xIyIU5fSKi_NRJjDtiz6gLjs-L2s18J1USRdpW3Dj7nke1YhkXcAMdBrFmLmvtWBcwe8Ajue_d5KfzZVdpBOduYXJKyye2UQLJptCTkH3CSbafoJGJsMoBtsYwvWQZDayi9qm4Y">
+                        <div class="absolute inset-0 bg-gradient-to-t from-ast-deep-blue via-ast-deep-blue/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full max-w-2xl">
+                            <span class="font-technical-data text-[10px] text-tech-cyan uppercase tracking-widest mb-2 block">ПРОМЫШЛЕННОСТЬ</span>
+                            <h3 class="font-headline-lg text-white text-4xl mb-4 font-bold">Завод металлоконструкций</h3>
+                            <a class="text-white font-label-caps text-[12px] uppercase tracking-widest flex items-center gap-2 hover:text-tech-cyan transition-colors" href="#">
+              Подробнее <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8">
+                    <button class="bg-peach-orange text-ast-deep-blue font-label-caps text-label-caps px-10 py-5 uppercase tracking-[0.2em] hover:bg-ast-deep-blue hover:text-white hover:-translate-y-1 hover:shadow-[0_15px_30px_-10px_rgba(255,182,133,0.4)] transition-all duration-300 rounded-2xl font-bold">Смотреть все проекты</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative py-32 bg-white overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="flex flex-col gap-16">
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-4">
+                        <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Наша продукция</span>
+                        <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                    </div>
+                    <h2 class="font-display-lg text-ast-deep-blue leading-tight text-[48px] md:text-[56px] font-extrabold">Промышленное оборудование</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Catalog Item 1 -->
+                    <div class="col-span-1 lg:col-span-12 group relative overflow-hidden rounded-2xl border border-on-surface-variant/20 bg-surface-ice p-0 hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row">
+                        <div class="w-full md:w-1/2 h-64 md:h-auto bg-surface-variant/30 flex items-center justify-center overflow-hidden relative">
+                            <div class="absolute inset-0 bg-ast-deep-blue/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <img alt="Treatment Facilities" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UcUm1zkdyCyvjxWatgdDUezGH-zRRg7P3RplvT2nxv9YkX7hRTK61MOQ9YNwROzSLqY91NNCJoZqFqspI_0y6ZhmxyiRPnC3WHgauim-xKgCVxa9iHSNfmD4cHioEtl_4goNhUPkBurpJ_khY3wDjMcvWGpKE7SXb7nJTQJeKR6fSNeAVATPLxXs9SKllD3YqLbXtOWZq6OmCNtFm6ZrsweyXxYdhqMzOfCuMAdWlAy4kG9Avuq4xHX4k">
+                        </div>
+                        <div class="w-full md:w-1/2 p-10 flex flex-col justify-center relative bg-white">
+                            <div class="absolute top-0 right-0 w-16 h-16 border-t border-r border-tech-cyan/20 m-4"></div>
+                            <div class="font-technical-data text-[10px] text-tech-cyan mb-4 tracking-widest uppercase">CAT_01 // TREATMENT</div>
+                            <h3 class="font-headline-lg text-ast-deep-blue mb-4 font-bold text-3xl">Очистные сооружения</h3>
+                            <p class="font-body-md text-on-surface-variant/80 mb-6 leading-relaxed">Комплексные системы биологической и химической очистки сточных вод с интеграцией смарт-контроля.</p>
+                            <div class="grid grid-cols-2 gap-4 mt-auto border-t border-on-surface-variant/10 pt-6">
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">CAPACITY</div>
+                                    <div class="font-bold text-ast-deep-blue">до 50,000 м³/сут</div>
+                                </div>
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">SYS_REQ</div>
+                                    <div class="font-bold text-tech-cyan">NORMAL_LOAD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Catalog Item 2 -->
+                    <div class="col-span-1 lg:col-span-12 group relative overflow-hidden rounded-2xl border border-on-surface-variant/20 bg-surface-ice p-0 hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row-reverse">
+                        <div class="w-full md:w-1/2 h-64 md:h-auto bg-surface-variant/30 flex items-center justify-center overflow-hidden relative">
+                            <div class="absolute inset-0 bg-ast-deep-blue/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <img alt="Pumping Stations" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UWVx1dpxcZyn4Bg9J-XnRGNwbfwqj_GyDHfVa_0qF-p-bu0-1qpO2urEnWWryg_iD1jcJT4M_8PPSVt0u6nRKoZDVvWhs69-nz3EGrW5D8C22JoJogoY-R80_uoAyGk6fQOD35wcp-hUpQz653iqMYo0OLhMHye94me-Baw6AEARNuXJrRgJdaZPTaPB5NgXyr5ZY07np3WmNfLO2W7Nj3phuCDevZTOtPyRl9txgUrISECEf87AO0oiI">
+                        </div>
+                        <div class="w-full md:w-1/2 p-10 flex flex-col justify-center relative bg-white">
+                            <div class="absolute top-0 left-0 w-16 h-16 border-t border-l border-tech-cyan/20 m-4"></div>
+                            <div class="font-technical-data text-[10px] text-tech-cyan mb-4 tracking-widest uppercase">CAT_02 // PUMPING</div>
+                            <h3 class="font-headline-lg text-ast-deep-blue mb-4 font-bold text-3xl">Насосные станции</h3>
+                            <p class="font-body-md text-on-surface-variant/80 mb-6 leading-relaxed">Высокопроизводительные решения для транспортировки жидкостей в экстремальных условиях.</p>
+                            <div class="grid grid-cols-2 gap-4 mt-auto border-t border-on-surface-variant/10 pt-6">
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">PRESSURE</div>
+                                    <div class="font-bold text-ast-deep-blue">до 120 атм</div>
+                                </div>
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">SYS_REQ</div>
+                                    <div class="font-bold text-tech-cyan">HIGH_LOAD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Catalog Item 3 -->
+                    <div class="col-span-1 lg:col-span-12 group relative overflow-hidden rounded-2xl border border-on-surface-variant/20 bg-surface-ice p-0 hover:shadow-2xl transition-all duration-500 flex flex-col md:flex-row">
+                        <div class="w-full md:w-1/2 h-64 md:h-auto bg-surface-variant/30 flex items-center justify-center overflow-hidden relative">
+                            <div class="absolute inset-0 bg-ast-deep-blue/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                            <img alt="Reservoirs" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1U12KNa70Ohs15-OtWtfkhG_Mi-m29-PyvSrX6n5x6vYZIGDdB6NEX3FW2ouB9lY8dlK7ixH14fJdV39-GDgv0wmXYZUegjv-GWP34M4HgTuFfy3fT2xIyIU5fSKi_NRJjDtiz6gLjs-L2s18J1USRdpW3Dj7nke1YhkXcAMdBrFmLmvtWBcwe8Ajue_d5KfzZVdpBOduYXJKyye2UQLJptCTkH3CSbafoJGJsMoBtsYwvWQZDayi9qm4Y">
+                        </div>
+                        <div class="w-full md:w-1/2 p-10 flex flex-col justify-center relative bg-white">
+                            <div class="absolute top-0 right-0 w-16 h-16 border-t border-r border-tech-cyan/20 m-4"></div>
+                            <div class="font-technical-data text-[10px] text-tech-cyan mb-4 tracking-widest uppercase">CAT_03 // STORAGE</div>
+                            <h3 class="font-headline-lg text-ast-deep-blue mb-4 font-bold text-3xl">Резервуары</h3>
+                            <p class="font-body-md text-on-surface-variant/80 mb-6 leading-relaxed">Емкостное оборудование из композитных материалов и стали с антикоррозийной защитой.</p>
+                            <div class="grid grid-cols-2 gap-4 mt-auto border-t border-on-surface-variant/10 pt-6">
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">VOLUME</div>
+                                    <div class="font-bold text-ast-deep-blue">до 10,000 м³</div>
+                                </div>
+                                <div>
+                                    <div class="font-technical-data text-[10px] text-on-surface-variant/60 tracking-widest uppercase mb-1">SYS_REQ</div>
+                                    <div class="font-bold text-tech-cyan">STABLE_ENV</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-12">
+                    <button class="bg-peach-orange text-ast-deep-blue font-label-caps text-label-caps px-10 py-5 uppercase tracking-[0.2em] hover:bg-ast-deep-blue hover:text-white hover:-translate-y-1 hover:shadow-[0_15px_30px_-10px_rgba(255,182,133,0.4)] transition-all duration-300 rounded-2xl font-bold">Смотреть весь каталог</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative py-32 bg-surface-container-low overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid opacity-100"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+            <div class="grid grid-cols-12 gap-16">
+                <!-- Left Column: Contact Info -->
+                <div class="col-span-12 lg:col-span-5 flex flex-col gap-8">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <span class="font-label-caps text-label-caps text-tech-cyan uppercase tracking-[0.2em]">Контакты</span>
+                            <div class="h-[1px] w-12 bg-tech-cyan/30"></div>
+                        </div>
+                        <h2 class="font-display-lg text-ast-deep-blue leading-tight text-[48px] md:text-[56px] font-extrabold">Связаться с нами</h2>
+                        <p class="font-body-lg text-on-surface-variant text-lg leading-relaxed">
+                            Наши специалисты свяжутся с вами в ближайшее время для уточнения деталей проекта.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-8 mt-4">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tech-cyan text-3xl">location_on</span>
+                            <div>
+                                <div class="font-label-caps text-[10px] text-tech-cyan uppercase tracking-widest mb-1">Адрес</div>
+                                <div class="text-ast-deep-blue font-body-md font-bold">ул. Промышленная, 42, Технопарк «Инновация»</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tech-cyan text-3xl">call</span>
+                            <div>
+                                <div class="font-label-caps text-[10px] text-tech-cyan uppercase tracking-widest mb-1">Телефон</div>
+                                <div class="text-ast-deep-blue font-body-md font-bold">+7 (800) 555-01-99</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tech-cyan text-3xl">mail</span>
+                            <div>
+                                <div class="font-label-caps text-[10px] text-tech-cyan uppercase tracking-widest mb-1">Email</div>
+                                <div class="text-ast-deep-blue font-body-md font-bold">info@aquasfera.tech</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Form -->
+                <div class="col-span-12 lg:col-span-7">
+                    <form class="bg-white/90 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-on-surface-variant/10 shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 border-t border-r border-tech-cyan/20"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 border-b border-l border-tech-cyan/20"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest">Имя</label>
+                                <input class="w-full bg-surface-ice border border-on-surface-variant/20 p-5 rounded-xl focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan outline-none transition-all font-body-md text-ast-deep-blue" placeholder="Иван Иванов" type="text">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest">Компания</label>
+                                <input class="w-full bg-surface-ice border border-on-surface-variant/20 p-5 rounded-xl focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan outline-none transition-all font-body-md text-ast-deep-blue" placeholder="ООО Технологии" type="text">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest">Email</label>
+                                <input class="w-full bg-surface-ice border border-on-surface-variant/20 p-5 rounded-xl focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan outline-none transition-all font-body-md text-ast-deep-blue" placeholder="ivan@example.com" type="email">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest">Телефон</label>
+                                <input class="w-full bg-surface-ice border border-on-surface-variant/20 p-5 rounded-xl focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan outline-none transition-all font-body-md text-ast-deep-blue" placeholder="+7 (___) ___-__-__" type="tel">
+                            </div>
+                            <div class="col-span-1 md:col-span-2 flex flex-col gap-2">
+                                <label class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest">Сообщение</label>
+                                <textarea class="w-full bg-surface-ice border border-on-surface-variant/20 p-5 rounded-xl focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan outline-none transition-all font-body-md text-ast-deep-blue resize-none" placeholder="Опишите ваш проект..."
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                        <button class="mt-10 w-full bg-peach-orange text-ast-deep-blue font-label-caps text-label-caps py-6 uppercase tracking-[0.2em] hover:bg-ast-deep-blue hover:text-white hover:-translate-y-1 hover:shadow-[0_15px_30px_-10px_rgba(255,182,133,0.4)] transition-all duration-300 rounded-2xl font-bold relative z-10"
+                            type="submit">
+            Отправить заявку
+          </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full bg-ast-deep-blue text-white relative z-10 font-body-md overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-grid-white opacity-20"></div>
+        <div class="max-w-container-max mx-auto px-margin-desktop py-24 relative z-10">
+            <div class="grid grid-cols-12 gap-gutter">
+                <!-- Brand and Socials -->
+                <div class="col-span-12 md:col-span-4 flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <span class="font-headline-lg text-headline-lg font-bold tracking-tight text-white">AST</span>
+                        <p class="text-white/70 max-w-xs leading-relaxed">
+                            Инновационные технологии производства мирового класса. Современные технологии и строгий контроль качества на каждом этапе.
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">send</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">photo_camera</span>
+                        </a>
+                        <a class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-tech-cyan hover:text-ast-deep-blue transition-all duration-300" href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navigation Columns -->
+                <div class="col-span-12 md:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Навигация</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Продукция</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Решения</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Проекты</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Сервис</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Полезное</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Техническая поддержка</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Документация</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">FAQ</a>
+                            <a class="text-white hover:text-tech-cyan transition-colors" href="#">Лаборатория</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-4 bg-tech-cyan rounded-full"></div>
+                            <span class="font-label-caps text-label-caps uppercase tracking-widest text-white/50">Контакты</span>
+                        </div>
+                        <div class="grid grid-cols-1 gap-4">
+                            <p class="text-white text-sm">ул. Промышленная, 42</p>
+                            <p class="text-white text-sm">+7 (800) 555-01-99</p>
+                            <p class="text-white text-sm">info@aquasfera.tech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="bg-black/20 py-8 border-t border-white/10 relative z-10">
+            <div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-col gap-1">
+                    <span class="font-bold text-white">AST</span>
+                    <p class="text-white/50 text-sm">© 2024 Aqua Sfera Technology. Все права защищены.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Политика конфиденциальности</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Карта сайта</a>
+                    <a class="text-white/70 hover:text-tech-cyan text-sm transition-colors" href="#">Техническая поддержка</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
