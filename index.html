@@ -359,8 +359,18 @@
                             width: max-content;
                             animation: scroll 40s linear infinite;
                         }
+
+                        .animate-scroll:hover {
+                            animation-play-state: paused;
+                        }
+
+                        @media (prefers-reduced-motion: reduce) {
+                            .animate-scroll {
+                                animation: none;
+                            }
+                        }
                     </style>
-                    <div class="animate-scroll flex gap-12 items-center">
+                    <div id="partners-track" class="animate-scroll flex gap-12 items-center">
                         <div class="flex gap-12 items-center flex-none">
                             <div class="h-32 w-72 flex items-center justify-center p-8 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
                                 <div class="font-headline-lg text-ast-deep-blue/60 text-2xl tracking-widest font-bold">GLOBAL_IND</div>
@@ -414,6 +424,30 @@
                             </div>
                         </div>
                     </div>
+                    <script>
+                        (() => {
+                            const partners = [
+                                ['LUKOIL.png', 'Лукойл'],
+                                ['QUROLLI KUCHLARI AKADEMIYASI.png', 'Академия Вооружённых Сил Республики Узбекистан'],
+                                ['SANEG.png', 'SANEG'],
+                                ["UZSUVTA'MINOT.png", 'Узсувтаъминот'],
+                                ['QISHLOQ QURILISH INVEST.png', 'Qishloq Qurilish Invest'],
+                                ['AMIRSOY.png', 'Amirsoy'],
+                                ['AYDARKOL.png', 'Айдаркуль'],
+                                ['DAVLAT BOJXONA XIZMATI.png', 'Государственная таможенная служба'],
+                                ['DISCOVER INVEST.png', 'Discover Invest'],
+                                ['ENTER ENGINEERING.png', 'Enter Engineering'],
+                                ['HYATT REGENCY.png', 'Hyatt Regency'],
+                                ['KUMUSHKON RESORT.png', 'Kumushkon Resort']
+                            ];
+                            const card = ([file, name]) => `
+                                <div class="h-32 w-72 flex-none flex items-center justify-center p-6 border border-on-surface-variant/20 rounded-2xl bg-white grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                    <img src="${encodeURI('./images/partners/' + file)}" alt="${name}" title="${name}" class="block max-h-20 max-w-full w-auto h-auto object-contain" loading="lazy">
+                                </div>`;
+                            const logoSet = `<div class="flex gap-12 items-center flex-none">${partners.map(card).join('')}</div>`;
+                            document.getElementById('partners-track').innerHTML = logoSet + logoSet;
+                        })();
+                    </script>
                 </div>
             </div>
         </div>
